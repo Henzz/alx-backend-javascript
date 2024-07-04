@@ -70,3 +70,16 @@ function executeWork(employee: Director | Teacher): void {
     console.log(employee.workTeacherTasks());
   }
 }
+
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass: Subjects): string {
+  switch (todayClass) {
+    case "Math":
+      return "Teaching Math";
+    case "History":
+      return "Teaching History";
+    default:
+      throw new Error("Invalid subject");
+  }
+}
