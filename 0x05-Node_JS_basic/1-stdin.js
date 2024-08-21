@@ -1,4 +1,4 @@
-process.stdout.write("Welcome to Holberton School, what is your name?");
+process.stdout.write("Welcome to Holberton School, what is your name?\n");
 
 process.stdin.on("readable", function () {
   var name = process.stdin.read();
@@ -9,12 +9,6 @@ process.stdin.on("readable", function () {
 });
 
 process.on("end", () => {
-  process.stdout.write("This important software is now closing");
+  process.stdout.write("This important software is now closing\n");
   process.exit(0);
 });
-
-module.exports = {
-  main: () => {
-    // Entry point for testing
-  },
-};
